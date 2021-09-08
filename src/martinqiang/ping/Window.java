@@ -1,4 +1,4 @@
-package net.martinq.ping;
+package martinqiang.ping;
 
 import java.awt.*;
 import javax.swing.*;
