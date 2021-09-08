@@ -1,4 +1,4 @@
-package com.martinq.ping;
+package net.martinq.ping;
 
 public class Renderer {
 

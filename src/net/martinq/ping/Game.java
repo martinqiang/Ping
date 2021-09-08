@@ -1,6 +1,6 @@
-package com.martinq.ping;
+package net.martinq.ping;
 
-public class Main{
+public class Game{
     public static void main(String[] args) {
         Window window = new Window(); // Create the game window
 
