@@ -11,26 +11,30 @@ import javax.swing.*;
 
 public class Window extends JFrame{
 
-    private static final int WIDTH = 512, HEIGHT = 512;
-    private static final String NAME = "Ping";
+    private final int width;
+    private final int height;
+    private final String name;
 
     private int player1Score = 0;
     private int player2Score = 0;
 
     // Constructor
-    public Window(){
+    public Window(String name, int width, int height){
+        this.name = name;
+        this.width = width;
+        this.height = height;
         // Initialisation of the game window
         initScreen();
         //initGUI();
         //updateWindow();
-        add(new Bat());
-        setVisible(true);
+//        add(new Bat());
+//        setVisible(true);
     }
 
     private void initScreen(){
 
-        Dimension minSize = new Dimension(WIDTH,HEIGHT);
-        setTitle(NAME);
+        Dimension minSize = new Dimension(width,height);
+        setTitle(name);
         setMinimumSize(minSize);
         setGameIcon();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Exit game on closing window
